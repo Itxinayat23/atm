@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .img{
+            width: 200px;
+            height: 200px;
+        }
+.main{
+    background-color: cadetblue;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    font-family: bold;
+    border: 2px solid black;
+    margin-left: 300px;
+}
+h1{
+    text-align: center;
+    background-color: teal;
+}
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO MCB BANK PVT</h1>
+    <div class="main">
+        <img src="https://media.istockphoto.com/id/1281693485/photo/person-entering-pin-code-using-atm-bank-machine-to-withdraw-money-close-up.jpg?s=1024x1024&w=is&k=20&c=e2cdfzPr-ODMc842z2DdZjzYXz7bYrekgFFXqT6bz6c=" class="img">
+        <script>
+            var enter_card=prompt("enter your atm card numbar");
+            var ATM_pin=prompt("enter your 4 dgit pin");
+            var balance_amount=500;
+            var amount_requried=parseInt(prompt("enter withdara amount==="+balance_amount));
+            var fee_trx=23;
+            var total_balance =balance_amount-amount_requried-fee_trx;
+            document.write(amount_requried<=balance_amount);
+            document.write("<br/>");
+            document.write("your total amount in your bank account==="+balance_amount);
+            document.write("<br/>");
+            document.write("withdwra amount ==="+amount_requried);
+            document.write("<br/>");
+            document.write("atm trx fee==="+fee_trx);
+            document.write("<br/>");
+            document.write("reming balnce ====="+total_balance);
+            document.write("<br/>");
+            document.write("thanks transaction successful");
+        </script>
+    </div>
+</body>
+</html>
